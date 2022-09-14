@@ -88,7 +88,6 @@ const closeIssue = (id) => {
     return issue.id == id;
   });
   closeissue[0].status = "closed";
-  console.log(closeissue);
   localStorage.setItem("issues", JSON.stringify(issues));
   displayIssue();
 };
@@ -99,7 +98,6 @@ const deleteIssue = (id) => {
   const updateIssue = issues.filter((issue) => {
     return issue.id != id;
   });
-  console.log(updateIssue);
   localStorage.setItem("issues", JSON.stringify(updateIssue));
   displayIssue();
 };
