@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/9a0449aea6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>TODO</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="describe-container">
+      <h1 class="title">Add New Issue</h1>
+      <div class="inputField">
+        <label for="description">Description</label
+        ><input type="text" id="description" name="description" required />
+      </div>
+
+      <div class="inputField">
+        <label for="description">Severity</label>
+        <select id="selector">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+      </div>
+
+      <div class="inputField">
+        <label for="assign">Assign to</label
+        ><input type="text" id="assign" name="assign" required />
+      </div>
+      <div class="issue-button">
+        <button type="submit" class="issueBtn" id="issueBtn">Add Issue</button>
+      </div>
+    </div>
+
+    <div class="issues-container" id="issueContainer"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

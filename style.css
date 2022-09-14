@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222f3e;
+  font-family: "Poppins", sans-serif;
+}
+
+.describe-container {
+  width: 50%;
+  padding: 20px 40px;
+  margin: 50px auto;
+  background-color: #576574;
+  border-radius: 5px;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 25px;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.inputField label {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.inputField input,
+select,
+option {
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.inputField input:focus,
+select:focus {
+  border: 1px solid #ff6b6b;
+  box-shadow: #ff6b6b 0px 2px 10px -2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.issue-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.issueBtn {
+  padding: 10px 40px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 600;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #b53471;
+  font-family: "Poppins", sans-serif;
+}
+
+.issueBtn:hover {
+  cursor: pointer;
+  background-color: #902959;
+  transition: all 0.3s ease-in-out;
+}
+
+.issue {
+  margin: 20px 0;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  margin: 50px auto;
+  background-color: #576574;
+  border-radius: 5px;
+}
+
+.clsBtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.clsBtn i {
+  font-size: 15px;
+  padding: 8px 11px;
+  background-color: #ea2027;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.clsBtn i:hover {
+  cursor: pointer;
+  background-color: #ad161b;
+  transition: all 0.3s ease-in-out;
+}
+
+.issue-id {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.open {
+  padding: 3px 12px;
+  font-size: 13px;
+  display: inline;
+  border-radius: 4px;
+  background-color: #54a0ff;
+}
+
+.issue-title {
+  margin: 10px 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.issue-level {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.user-assign {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.issues-btn {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.close,
+.delete {
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  color: #222f3e;
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: #ff6b6b;
+  font-family: "Poppins", sans-serif;
+}
+
+.close {
+  color: #000000;
+  font-weight: 600;
+  background-color: #ffc312;
+}
+
+.close:hover {
+  cursor: pointer;
+  background-color: #c29717;
+  transition: all 0.3s ease-in-out;
+}
+
+.delete {
+  color: #fff;
+  font-weight: 600;
+  background-color: #ea2027;
+}
+
+.delete:hover {
+  cursor: pointer;
+  background-color: #b11b20;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 650px) {
+  .describe-container {
+    width: 95%;
+  }
+  .issue {
+    width: 95%;
+  }
+}
